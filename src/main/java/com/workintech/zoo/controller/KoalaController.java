@@ -53,7 +53,7 @@ public class KoalaController {
             koalas.put(id,newKoala);
             return koalas.get(id);
         }else{
-            return null;
+            return addKoala(newKoala);
         }
 
     }

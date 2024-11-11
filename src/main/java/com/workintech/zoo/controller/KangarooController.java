@@ -50,10 +50,11 @@ public class KangarooController {
     }
 
     @PostMapping
-    public void addKangaroo(@RequestBody Kangaroo kangaroo){
+    public Kangaroo addKangaroo(@RequestBody Kangaroo kangaroo){
             ZooKangarooValidation.checkKangarooExistence(kangoroos,kangaroo.getId(),false);
             ZooKangarooValidation.checkKangarooWeight(kangaroo.getWeight());
             kangoroos.put(kangaroo.getId(), kangaroo);
+            return kangoroos.get(kangaroo.getId());
     }
 
     @PutMapping("/{id}")
@@ -62,11 +63,11 @@ public class KangarooController {
         ZooKangarooValidation.checkKangarooWeight(newKangaroo.getWeight());
         newKangaroo.setId(id);
 
-        if(kangoroos.containsKey(id)){
+        if(this.kangoroos.containsKey(id)){
             kangoroos.put(id,newKangaroo);
             return kangoroos.get(id);
         }else{
-            return null;
+            return addKangaroo(newKangaroo);
         }
 
 
