@@ -1,19 +1,13 @@
-#  Java Spring REST API
 
-### Proje Kurulumu
 
-Projeyi öncelikle forklayın ve clone edin.
-Daha sonra projeyi IntellijIDEA kullanarak açınız. README.md dosyasını dikkatli bir şekilde okuyarak istenenleri yapmaya çalışın.
-Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak işimizi kolaylaştırmak adına iyi bir alışkanlıktır.
-Örnek bir Lokasyon: Workintech/Sprint_1/Etud.
 
 ### Hedeflerimiz:
 
 ### Zoo Rest Api
 
  ### Başlangıç
- * Uygulamanızı  ```9000``` portundan ayağa kaldırın.
- * Bir hayvanat bahçesi için rest api dizayn etmeniz istenmektedir.
+ * Uygulaman  ```9000``` portunda.
+ * Bir hayvanat bahçesi için rest api dizaynı
  
  ### Görev 1
  * main metodunuz ```com.workintech.zoo``` paketi altında olmalıdır
